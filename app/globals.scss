@@ -1,0 +1,41 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-desaturated-dark-cyan {
+  background-color: hsl(180, 29%, 50%);
+}
+
+.bg-light-grayish-cyan {
+  background-color: hsl(180, 52%, 96%);
+}
+.bg-light-grayish-cyan-filter-tablets {
+  background-color: hsl(180, 31%, 95%);
+}
+.bg-dark-grayish-cyan {
+  background-color: hsl(180, 8%, 52%);
+}
+.bg-very-dark-grayish-cyan {
+  background-color: hsl(180, 14%, 20%);
+}
+.text-primary {
+  color: hsl(180, 29%, 50%);
+}
