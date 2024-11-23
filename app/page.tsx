@@ -1,5 +1,5 @@
-import { Header } from "@/components/Header/Header";
-import { Joblist } from "@/components/Joblist/Joblist";
+import { Header } from "@/components/Header";
+import { Joblist } from "@/components/Joblist";
 
 export default function Home() {
   return (

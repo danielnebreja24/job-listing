@@ -2,20 +2,22 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url("https://fonts.google.com/specimen/Spartan");
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ededed; /* This is your main color (light) for dark mode */
   }
 }
 
 body {
-  color: var(--foreground);
+  color: var(--foreground); /* Use the foreground color */
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,4 +40,37 @@ body {
 }
 .text-primary {
   color: hsl(180, 29%, 50%);
+}
+
+.main-header-div {
+  height: 120px;
+}
+
+.header-filter-div {
+  bottom: -30px;
+}
+
+.header-filter-div-mobile {
+  top: 10px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+.pt-90 {
+  padding-top: 90px;
+}
+
+.role-overview-div > span:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: #fff;
+}
+
+.job-position-div:hover {
+  cursor: pointer;
+  color: hsl(180, 29%, 50%);
+}
+
+.filter-delete-icon:hover {
+  background-color: hsl(180, 14%, 20%);
 }
